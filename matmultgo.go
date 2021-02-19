@@ -13,7 +13,7 @@ func createMatrix(order int) []float64 {
 
 // Receives two row major matrices and multiply them
 // Returns the product matrix and the elapsed time
-func matMultByInput(order int, matrix1 []float64, matrix2 []float64) ([]float64, time.Duration) {
+func MatMultByInput(order int, matrix1 []float64, matrix2 []float64) ([]float64, time.Duration) {
 	matrix3 := createMatrix(order)
 
 	start := time.Now()
@@ -33,7 +33,7 @@ func matMultByInput(order int, matrix1 []float64, matrix2 []float64) ([]float64,
 }
 
 // For bechmark purposes, multiply matrices filled with ones
-func matMultByOrder(order int) ([]float64, time.Duration) {
+func MatMultByOrder(order int) ([]float64, time.Duration) {
 	matrix1 := createMatrix(order)
 	matrix2 := createMatrix(order)
 	matrix3 := createMatrix(order)
